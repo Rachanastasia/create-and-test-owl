@@ -1,0 +1,10 @@
+.stage {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    text-align: center;
+    width: inherit;
+    height: inherit;
+    background-color: #EEEEEF;
+}

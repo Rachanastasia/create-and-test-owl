@@ -1,0 +1,44 @@
+.wrapper {
+    /* display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    background-color: red;
+    width: inherit; */
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: flex-start;
+    align-items: flex-start;
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    width: inherit;
+}
+
+.person {
+    width: inherit;
+    display: flex;
+    align-items: center;
+    padding: 0;
+    margin: 0;
+}
+
+.wrapNameStage {
+    display: flex;
+    flex-direction: column;
+    flex: 3;
+}
+
+p {
+    padding: 0;
+    margin: 0;
+}
+
+.dot {
+    height: 8px;
+    width: 8px;
+    margin-right: 4px;
+    background-color: green;
+    border-radius: 50%;
+    display: inline-block;
+}

@@ -1,26 +1,30 @@
 import React from 'react';
-import logo from './logo.svg';
+import Stage from './Stage/Stage';
+import Participants from './Participants/Participants';
+import STORE from './STORE';
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+import { VscThumbsdown } from 'react-icons/vsc';
+import { VscThumbsup } from 'react-icons/vsc';
+
+
+class App extends React.Component {
+
+  render() {
+
+
+
+
+    return (
+      <main className='App'>
+        {/* <h1>TESTING</h1>
+        <VscThumbsdown />
+        <VscThumbsup /> */}
+        <Participants store={STORE} />
+        <Stage store={STORE} />
+      </main>
+    )
+  };
 }
 
 export default App;

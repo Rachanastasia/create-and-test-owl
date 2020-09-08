@@ -1,0 +1,18 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Participant renders UI as expected 1`] = `
+<div
+  className="person"
+>
+  <img
+    alt="an icon"
+    href="https://robohash.org/itaquevoluptatumrerum.jpg?size=200x200&set=set1"
+  />
+  <div
+    className="personName"
+  />
+  <div
+    className="onStage"
+  />
+</div>
+`;
