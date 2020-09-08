@@ -1,13 +1,23 @@
 import React from 'react';
 import './Participants.css'
 import Participant from './Participant/Participant';
+import Top from './Top/Top'
+import Chat from './Chat/Chat'
 
-export default function Participants(props) {
-    console.log(props.store);
-    return (
-        <section className="participants">
-            <Participant store={props.store} />
+export default class Participants extends React.Component {
+    state = {
+        showChat: false
+    }
 
-        </section>
-    )
+    render() {
+        return (
+            <section className="participants">
+                <Top />
+                {this.state.sidebar === true
+                    ? <Chat />
+                    : <Participant store={this.props.store} />
+                }
+            </section>
+        )
+    }
 }
